@@ -72,13 +72,14 @@ const Detail = () => {
               {borders &&
                 borders.map((item, i) => {
                   return (
-                    <Button
-                      key={i}
-                      className="drop-shadow-md border border-gray-200 px-3 md:ml-4 dark:border-gray-700"
-                      size="sm"
-                    >
-                      {item}
-                    </Button>
+                    <Link to={`/detail/${item}`} key={i}>
+                      <Button
+                        className="drop-shadow-md border border-gray-200 px-3 md:ml-4 dark:border-gray-700"
+                        size="sm"
+                      >
+                        {item}
+                      </Button>
+                    </Link>
                   );
                 })}
             </div>

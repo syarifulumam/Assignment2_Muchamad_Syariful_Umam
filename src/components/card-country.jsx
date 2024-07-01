@@ -13,7 +13,9 @@ const CardCountry = ({ country }) => {
             className="object-cover md:h-48 md:w-full"
           />
           <CardHeader>
-            <CardTitle>{country.name.common}</CardTitle>
+            <CardTitle className="truncate h-10">
+              {country.name.common}
+            </CardTitle>
           </CardHeader>
           <CardContent>
             <p>Population : {country.population.toLocaleString()}</p>

@@ -8,6 +8,7 @@ import ReactPaginate from "react-paginate";
 import useFetch from "./api/useFetch.js";
 import { Skeleton } from "./components/skeleton.jsx";
 import { AnimatePresence } from "framer-motion";
+import { NotFound } from "./components/not-found.jsx";
 
 const Home = () => {
   const setKeyword = useStore((state) => state.setKeyword);
@@ -59,7 +60,7 @@ function PaginatedItems({ itemsPerPage }) {
     filteredCountry(getCountry);
   }, [data]);
 
-  console.log(page);
+  if (filterCountry.length === 0) return <NotFound />;
 
   if (loading) return <Skeleton />;
 

@@ -60,7 +60,7 @@ function PaginatedItems({ itemsPerPage }) {
     filteredCountry(getCountry);
   }, [data]);
 
-  if (filterCountry.length === 0) return <NotFound />;
+  // if (filterCountry.length === 0) return <NotFound />;
 
   if (loading) return <Skeleton />;
 

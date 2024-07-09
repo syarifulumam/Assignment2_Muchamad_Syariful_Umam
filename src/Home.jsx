@@ -1,5 +1,5 @@
 import { Search } from "lucide-react";
-import React, { useEffect, useState } from "react";
+import { useEffect } from "react";
 import useStore from "./store/useStore.js";
 import { Input } from "./components/ui/input.jsx";
 import { FilterRegion } from "./components/filter-region.jsx";
@@ -12,6 +12,14 @@ import { NotFound } from "./components/not-found.jsx";
 
 const Home = () => {
   const setKeyword = useStore((state) => state.setKeyword);
+  const search = useStore((state) => state.search);
+  const setSearch = useStore((state) => state.setSearch);
+
+  const handleSearch = (e) => {
+    setSearch(e);
+    setKeyword(search);
+  };
+
   return (
     <>
       <div className="flex flex-col md:flex-row mb-4 items-center justify-between container">
@@ -20,7 +28,8 @@ const Home = () => {
           <Input
             placeholder="Search for a country..."
             className="max-w-sm pl-8 bg-primary"
-            onChange={(e) => setKeyword(e.target.value)}
+            onChange={(e) => handleSearch(e.target.value)}
+            value={search}
           />
         </div>
         <FilterRegion />
@@ -37,7 +46,8 @@ function PaginatedItems({ itemsPerPage }) {
   const filterCountry = useStore((state) => state.filterCountry);
   const filteredCountry = useStore((state) => state.setFilteredCountry);
   const setCountries = useStore((state) => state.setCountries);
-  const { data, loading, error } = useFetch(
+  const search = useStore((state) => state.search);
+  const { data, loading } = useFetch(
     "https://restcountries.com/v3.1/all?fields=name,flags,capital,region,population,cca3,borders,currencies,languages,subregion,tld"
   );
 
@@ -60,7 +70,7 @@ function PaginatedItems({ itemsPerPage }) {
     filteredCountry(getCountry);
   }, [data]);
 
-  // if (filterCountry.length === 0) return <NotFound />;
+  if (filterCountry.length === 0 && search !== "") return <NotFound />;
 
   if (loading) return <Skeleton />;
 

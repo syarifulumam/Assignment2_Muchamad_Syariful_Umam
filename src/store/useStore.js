@@ -9,6 +9,8 @@ const useStore = create(
       region: null,
       page: 0,
       itemOffset: 0,
+      search: "",
+      setSearch: (data) => set((state) => ({ search: data })),
       setPage: (data) => set((state) => ({ page: data })),
       setItemOffset: (data) => set((state) => ({ itemOffset: data })),
       setRegion: (data) => set((state) => ({ region: data })),

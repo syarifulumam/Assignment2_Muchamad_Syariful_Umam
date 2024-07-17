@@ -29,6 +29,8 @@ The tech stack used in building the Country List Page is :
 > - react-pagination
 > - framer-motion
 
+![stack](https://i.ibb.co.com/3WvgN7j/New-Project.webp)
+
 ![Landing Page Traditional Game](https://i.ibb.co.com/mGt1Vwj/New-Project-2.jpg)
 
 ![country list theme white](https://i.ibb.co.com/k2jqLnS/screencapture-assignment2muchamadsyarifulumam-vercel-app-2024-07-17-13-53-12.webp)
@@ -38,5 +40,6 @@ The tech stack used in building the Country List Page is :
 ![country list detail](https://i.ibb.co.com/Wx60v5r/screencapture-assignment2muchamadsyarifulumam-vercel-app-detail-Tunisia-2024-07-17-13-54-47.webp)
 
 ![country list not found](https://i.ibb.co.com/CQ9mRYk/screencapture-assignment2muchamadsyarifulumam-vercel-app-2024-07-17-13-55-14.webp)
+
 
 

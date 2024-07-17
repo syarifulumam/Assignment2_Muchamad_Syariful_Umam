@@ -16,7 +16,7 @@ My task is integrating with the REST Countries API to pull country data and di
 Deployment using the vercel, [demo](https://assignment2muchamadsyarifulumam.vercel.app).
 
 ## Stack
-The tech stack used in building the Country List Page is :
+The tech stack used in building the Country List Page includes:
 > - HTML
 > - CSS
 > - Javascript

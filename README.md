@@ -30,3 +30,13 @@ The tech stack used in building the Country List Page is :
 > - framer-motion
 
 ![Landing Page Traditional Game](https://i.ibb.co.com/mGt1Vwj/New-Project-2.jpg)
+
+![country list theme white](https://i.ibb.co.com/k2jqLnS/screencapture-assignment2muchamadsyarifulumam-vercel-app-2024-07-17-13-53-12.webp)
+
+![country list theme dark](https://i.ibb.co.com/z7PDsjm/screencapture-assignment2muchamadsyarifulumam-vercel-app-2024-07-17-13-53-56.png)
+
+![country list detail](https://i.ibb.co.com/Wx60v5r/screencapture-assignment2muchamadsyarifulumam-vercel-app-detail-Tunisia-2024-07-17-13-54-47.webp)
+
+![country list not found](https://i.ibb.co.com/CQ9mRYk/screencapture-assignment2muchamadsyarifulumam-vercel-app-2024-07-17-13-55-14.webp)
+
+
